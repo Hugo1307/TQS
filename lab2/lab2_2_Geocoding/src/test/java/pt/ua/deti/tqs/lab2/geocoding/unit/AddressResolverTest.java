@@ -31,7 +31,7 @@ class AddressResolverTest {
     @DisplayName("Test Case for correct API request.")
     void findAddressByLocation() throws URISyntaxException, IOException {
 
-        Optional<Address> addressOptional = Optional.empty();
+        Optional<Address> addressOptional;
 
         double latitude = 40.6318;
         double longitude = -8.658;

@@ -1,6 +1,5 @@
 package pt.ua.deti.tqs.lab2.geocoding.integration;
 
-import org.apache.http.client.utils.URIBuilder;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,11 +31,6 @@ public class AddressResolverIT {
 
         double latitude = 40.6318;
         double longitude = -8.658;
-        URIBuilder uriBuilder = new URIBuilder("https://open.mapquestapi.com/geocoding/v1/reverse");
-
-        uriBuilder.addParameter("key", "uXSAVwYWbf9tJmsjEGHKKAo0gOjZfBLQ");
-        uriBuilder.addParameter("location", String.format("%f,%f", latitude, longitude));
-        uriBuilder.addParameter("includeRoadMetadata", "true");
 
         Optional<Address> addressOptional = addressResolver.findAddressByLocation(latitude, longitude);
 
@@ -57,11 +51,6 @@ public class AddressResolverIT {
 
         double latitude = 400;
         double longitude = -8000;
-        URIBuilder uriBuilder = new URIBuilder("https://open.mapquestapi.com/geocoding/v1/reverse");
-
-        uriBuilder.addParameter("key", "uXSAVwYWbf9tJmsjEGHKKAo0gOjZfBLQ");
-        uriBuilder.addParameter("location", String.format("%f,%f", latitude, longitude));
-        uriBuilder.addParameter("includeRoadMetadata", "true");
 
         Optional<Address> addressOptional = addressResolver.findAddressByLocation(latitude, longitude);
 
