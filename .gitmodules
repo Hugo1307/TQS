@@ -1,0 +1,3 @@
+[submodule "FirstAssignment/CovidInfoAPI"]
+	path = FirstAssignment/CovidInfoAPI
+	url = https://github.com/Hugo1307/CovidInfoAPI

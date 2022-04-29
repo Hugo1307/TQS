@@ -1,0 +1,6 @@
+projectKey=TQS-Euromillions
+serverUrl=http://localhost:9009
+serverVersion=9.4.0.54424
+dashboardUrl=http://localhost:9009/dashboard?id=TQS-Euromillions
+ceTaskId=AYAY7IF5xPcKtcuNnZkX
+ceTaskUrl=http://localhost:9009/api/ce/task?id=AYAY7IF5xPcKtcuNnZkX
