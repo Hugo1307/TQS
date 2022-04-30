@@ -31,14 +31,8 @@ public class CountryStatisticsSteps {
 
     @Then("I should see the country statistics title {string}")
     public void iShouldSeeTheCountryStatsTitle(String result) {
-        try {
-            assertThat(countryStatisticsPage.checkTitle(result)).isTrue();
-        } catch (NoSuchElementException e) {
-            throw new AssertionError(
-                    "\"" + result + "\" not available in results");
-        } finally {
-            driver.quit();
-        }
+        assertThat(countryStatisticsPage.checkTitle(result)).isTrue();
+        driver.quit();
     }
 
     @And("I select the country {string}")
